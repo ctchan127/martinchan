@@ -56,13 +56,13 @@ if __name__ == "__main__":
             currentCol -= 1
         
         else:
-            print("Message 1") # Invalid direction.
+            print("You have no idea where you're going.") # Invalid direction.
         
         if (currentRow < 0 or currentCol < 0 
                         or currentRow >= len(grid) 
                         or currentCol >= len(grid[currentRow])):
             done = True
-            print("Message 2") # Out of bounds.
+            print("You fall into the chasm of doom.") # Out of bounds.
             
         else:
             if grid[currentRow][currentCol] == EMPTY:
